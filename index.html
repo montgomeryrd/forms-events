@@ -10,6 +10,39 @@
 
   <body>
     <!-- Content Goes Here -->
+    <form id="sample_form">
+      <fieldset>
+        <label for="first">first name:</label>
+        <input type="text" name="first" placeholder="Enter your First name" required>
+      </fieldset>
+      <fieldset>
+        <label for="last">last name:</label>
+        <input type="text" name="last" placeholder="Enter your Last name" required>
+      </fieldset>
+      <fieldset>
+        <label for="enrolled">Currently enrolled?</label>
+        <input type="checkbox" name="enrolled" value="enrolled">
+      </fieldset>
+      <fieldset>
+        <label for="future_classes">Interest in future courses?</label>
+        <input type="radio" name="future_classes" value="yes">yes
+        <input type="radio" name="future_classes" value="no">no
+      </fieldset>
+      <button id="submit-btn" type="submit">add student</button>
+    </form>
+
+    <section id="students">
+      <table>
+        <thead>
+          <th>first name</th>
+          <th>last name</th>
+          <th>enrolled</th>
+          <th>interested in future classes?</th>
+        </thead>
+        <tbody id="student_table">
+          <!-- Student table data goes here -->
+        </tbody>
+      </table>
     <script src="app.js"></script>
   </body>
 
